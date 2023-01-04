@@ -1,0 +1,140 @@
+.row-connect-class {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.student-role-connect {
+  width: 100%;
+  height: fit-content;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 55px;
+  color: #ffffff;
+}
+
+.student-name-connect {
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  width: 10%;
+  height: fit-content;
+  margin-left: 1%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 55px;
+  color: #ffffff;
+}
+
+.main-form-connect {
+  width: 50%;
+  height: 65vh;
+  background: #6093c1;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+}
+
+.class-connect {
+  width: 100%;
+  height: 30%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 55px;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  margin: 1% 0;
+}
+
+.class-name-connect,
+.class-code-connect {
+  height: 40%;
+  width: 25vw;
+  padding: 1% 1%;
+  min-width: 11em;
+  height: 78px;
+  text-decoration: none;
+  border: none;
+  background: #5380aa;
+  border-radius: 50px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 55px;
+  color: #ffffff;
+  margin: 1% 0;
+}
+
+.submit-bt-connect {
+  margin: 1% 0;
+  width: 25vw;
+  padding: 1% 1%;
+  min-width: 11em;
+  height: 15%;
+  background: #66d9bd;
+  border-radius: 50px;
+  border: none;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 55px;
+  color: #ffffff;
+}
+
+.button-lg-classes-connect {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  width: 1vw;
+  min-width: 6em;
+  height: 6vh;
+  margin-right: 2%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  justify-content: center;
+  background: #d1557a;
+  border-radius: 50px;
+}
+
+.submit-bt-connect:hover {
+  background-color: #63d1b7;
+}
+
+.submit-bt-connect:active {
+  background-color: #63d1b7;
+  box-shadow: 0 5px #666;
+}
+
+.button-lg-classes-connect:hover {
+  background-color: #bd5070;
+}
+
+.button-lg-classes-connect:active {
+  background-color: #5abca5;
+  box-shadow: 0 5px #666;
+}

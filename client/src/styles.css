@@ -1,0 +1,216 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/fonts/Rubik-Light.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rubik', sans-serif;
+}
+
+:root {
+  --toast-color-code: white;
+  --small_text: clamp(0.5rem, 1.5vw, 1.5rem);
+  --med_text: clamp(1rem, 2vw, 2rem);
+  --big_text: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #5380aa;
+  font-family: 'Rubik', sans-serif;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scrollbar-color: #79bbf9 #5380aa;
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar-button {
+  color: white;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.loader {
+  border: 16px solid #6093c1;
+  border-top: 32px solid #5380aa;
+  border-bottom: 32px solid #5380aa;
+  border-radius: 60%;
+  width: 220px;
+  height: 220px;
+  animation: spin 2s linear infinite;
+  margin: 18% auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.toast {
+  background: #79bbf9;
+  padding: 20px 40px;
+  width: 250px;
+  position: absolute;
+  right: 1%;
+  margin-top: 7%;
+  border-radius: 4px;
+  border-left: 8px solid var(--toast-color-code);
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  color: white;
+  font-weight: 500;
+  font-size: var(--small_text) 10px 10%;
+  z-index: 11000;
+}
+
+.not-found {
+  width: 50%;
+  height: 10vh;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  justify-content: center;
+  color: #ffffff;
+  background: #6093c1;
+  border-radius: 50px;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 500%);
+}
+
+.file-list {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  margin-top: 3%;
+  width: 95%;
+  height: 66.93px;
+  background: #5380aa;
+  border: none;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+  padding-left: 2rem;
+  border-radius: 50px;
+}
+
+.file-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.file-name {
+  width: 60%;
+  text-align: left;
+}
+
+.file-block-button {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.file-button {
+  width: 32%;
+  height: 100%;
+  background-color: #d1557a;
+  border: none;
+  color: white;
+  text-align: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.file-button:hover {
+  background-color: #ac4866;
+}
+
+.homework {
+  color: #66d9bd;
+}
+.labs {
+  color: #79bbf9;
+}
+.test {
+  color: #d56afb;
+}
+.examination {
+  color: #d1557a;
+}
+.practical {
+  color: #000000;
+}
+.classwork {
+  color: #eac15a;
+}
+.all {
+  color: white;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

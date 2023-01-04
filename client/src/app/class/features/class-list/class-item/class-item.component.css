@@ -1,0 +1,101 @@
+.cls {
+  width: 42vw;
+  min-width: 10em;
+  height: 83px;
+  background: #5380aa;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin: 1% auto 1% auto;
+}
+
+.name_class_4sym {
+  width: 33%;
+  height: 100%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 76px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 2%;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.name_class_teach {
+  width: 33%;
+  height: 100%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.butt_class_enter {
+  width: 15%;
+  margin-left: 19%;
+  height: 100%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background: #66d9bd;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.butt-delete:hover {
+  background-color: #bd5070;
+}
+
+.butt-delete:active {
+  background-color: #bd5070;
+  box-shadow: 0 5px #666;
+}
+
+.butt-connect:hover {
+  background-color: #63d1b7;
+}
+
+.butt-connect:active {
+  background-color: #63d1b7;
+  box-shadow: 0 5px #666;
+}
+
+.button-lg-classe-creates:hover {
+  background-color: #bd5070;
+}
+
+.button-lg-classes-create:active {
+  background-color: #5abca5;
+  box-shadow: 0 5px #666;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .name_class_teach {
+    display: none !important;
+  }
+  .name_class_4sym {
+    width: 67%;
+  }
+  .butt_class_enter {
+    width: 33%;
+  }
+}

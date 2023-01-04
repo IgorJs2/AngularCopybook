@@ -1,0 +1,54 @@
+<div class="row-register">
+
+<!--  <app-language-block></app-language-block>-->
+
+  <div class="HeaderStyle-register">Copybook</div>
+
+  <div class="form-register">
+    <input
+      class="loginform-register"
+      [placeholder]="'RegisterPage_input_name' | customTranslate: language.getLanguage()">
+    <input
+      class="emailform-register"
+      [placeholder]="'RegisterPage_input_mail' | customTranslate: language.getLanguage()"
+    >
+    <input
+      class="passwordform-register"
+      [placeholder]="'RegisterPage_input_password' | customTranslate: language.getLanguage()"
+    >
+  </div>
+
+
+  <div class="form-select-register">
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{'RegisterPage_input_role' | customTranslate: language.getLanguage()}}</mat-label>
+      <mat-select panelClass="">
+        <mat-option value="Teacher">Teacher</mat-option>
+        <mat-option value="Student">Student</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </div>
+
+  <div>
+    <div>
+      <button
+        type="submit"
+        class="submitform-register"
+
+      >
+        {{ "RegisterPage_button_signup" | customTranslate: language.getLanguage()}}
+      </button>
+    </div>
+  </div>
+
+  <div class="otherlink-register">
+    <a routerLink="/login" class="signup-register">
+      {{ "RegisterPage_text_account" | customTranslate: language.getLanguage()}}
+      <span class="spanothlink-register">
+              {{ "RegisterPage_text_signin" | customTranslate: language.getLanguage()}}
+      </span>
+    </a>
+  </div>
+</div>

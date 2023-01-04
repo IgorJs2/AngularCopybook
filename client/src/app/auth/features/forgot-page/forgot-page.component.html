@@ -1,0 +1,23 @@
+<div class="row-forgot">
+
+<!--  <app-language-block></app-language-block>-->
+
+  <div class="HeaderStyle-forgot">Copybook</div>
+
+  <form class="form-forgot" [formGroup]="forgotForm" (ngSubmit)="onSubmit()">
+    <input class="emailform-forgot" [placeholder]="'ForgotPage_input_mail' | customTranslate:  language.getLanguage()"
+           type="email" id="email" formControlName="email"/>
+    <button type="submit" class="submitform-forgot" [disabled]="!forgotForm.valid">
+      {{ 'ForgotPage_button_send' | customTranslate: language.getLanguage() }}
+    </button>
+  </form>
+
+  <div class="otherlink-forgot">
+    <a routerLink="/register" class="signup-forgot">
+      {{ 'ForgotPage_text_account' | customTranslate: language.getLanguage() }}
+      <span class="spanothlink-forgot">
+              {{ 'ForgotPage_text_signup' | customTranslate: language.getLanguage() }}
+      </span>
+    </a>
+  </div>
+</div>

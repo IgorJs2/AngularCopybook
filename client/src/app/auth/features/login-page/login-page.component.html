@@ -1,0 +1,28 @@
+
+
+<div class="row-login">
+
+  <app-language-block></app-language-block>
+  <app-toast></app-toast>
+
+  <div class="HeaderStyle-login">Copybook</div>
+
+    <form class="forms-login" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input class="loginform-login"  [placeholder]="'LoginPage_input_name' | customTranslate:  language.getLanguage()" type="login" id="login" formControlName="login">
+      <input class="passwordform-login" [placeholder]="'LoginPage_input_password' | customTranslate:  language.getLanguage()" type="password" id="password" formControlName="password">
+      <button class="submitform-login" type="submit" [disabled]="!loginForm.valid">
+        {{ "LoginPage_button_enter" | customTranslate: language.getLanguage() }}
+      </button>
+    </form>
+
+
+  <div class="otherlinks-login">
+    <a routerLink="/forgot" class="forgot-login">{{ "LoginPage_text_forgot" | customTranslate:  language.getLanguage() }}</a>
+    <a routerLink="/register" class="signup-login">
+      {{ "LoginPage_text_account" | customTranslate:  language.getLanguage() }}
+      <span class="spanothlink-login">
+        {{ "LoginPage_text_signup" | customTranslate:  language.getLanguage() }}
+      </span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="row-connect-class">
+  <app-language-block></app-language-block>
+  <app-toast></app-toast>
+
+  <div class="student-role-connect">
+
+    <div *ngIf="user.role === 'Teacher'">
+      {{ 'ClassPage_role_teacher' | customTranslate: this.language.getLanguage() }}
+    </div>
+    <div *ngIf="user.role === 'Student'">
+      {{ 'ClassPage_role_student' | customTranslate: this.language.getLanguage() }}
+    </div>
+  </div>
+
+  <div class="student-name-connect">
+    {{ user.login }}
+  </div>
+
+  <form  class="main-form-connect" [formGroup]="connectForm" (ngSubmit)="onSubmit()">
+
+      <h1 class="class-connect">
+        {{ 'ClassPages_connect' | customTranslate: this.language.getLanguage() }}
+      </h1>
+
+      <input class="class-code-connect" [placeholder]="'ClassPages_code' | customTranslate:  language.getLanguage()" formControlName="code" />
+      <button
+        class="submit-bt-connect"
+      >
+        {{ 'ClassPages_submit' | customTranslate: this.language.getLanguage() }}
+      </button>
+
+  </form>
+
+  <button
+    class="button-lg-classes-connect"
+    (click)="router.navigate(['/class'])"
+  >
+    {{ 'ClassPages_back' | customTranslate: this.language.getLanguage() }}
+  </button>
+</div>

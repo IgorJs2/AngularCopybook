@@ -1,0 +1,130 @@
+.row-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderStyle-login {
+  width: 100%;
+  height: 10vh;
+  color: #ffffff;
+  font-family: Rubik;
+  font-size: var(--big_text);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 76px;
+  letter-spacing: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.forms-login {
+  width: 100%;
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.loginform-login,
+.passwordform-login {
+  width: 22vw;
+  min-width: 18em;
+  height: 7vh;
+  background: #6093c1;
+  border-radius: 50px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 41px;
+  color: #ffffff;
+  border: none;
+  padding-left: 1%;
+  resize: none;
+  box-sizing: border-box;
+  margin: 0.2vw 0;
+}
+
+.submitform-login {
+  border: none;
+  margin: 0.2vw 0;
+  width: 22vw;
+  min-width: 18em;
+  height: 7vh;
+  background: #66d9bd;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 47px;
+  color: #ffffff;
+}
+
+.submitform-login:hover {
+  background: #5abca5;
+}
+
+.submitform-login:active {
+  background-color: #5abca5;
+  box-shadow: 0 5px #666;
+}
+
+.otherlinks-login {
+  width: 100%;
+  height: 10%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spanothlink-login {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  font-weight: bold;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.signup-login {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 46px;
+  color: #ffffff;
+}
+
+.forgot-login {
+  margin: 10% 0;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}

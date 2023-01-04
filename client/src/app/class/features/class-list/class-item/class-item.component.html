@@ -1,0 +1,29 @@
+
+  <div class="cls">
+    <div class="name_class_4sym">{{ class.name }}</div>
+
+    <div class="name_class_teach" *ngIf="user.role === 'Student'">
+
+      {{ 'ClassPage_component_teacher' | customTranslate: language.getLanguage() }}
+
+      {{class.teacherLogin}}
+    </div>
+
+    <div class="name_class_teach" *ngIf="user.role === 'Teacher'">
+
+      {{ 'ClassPage_component_students' | customTranslate: language.getLanguage() }}
+
+      {{class.nb_of_student + "/" + "30"}}
+    </div>
+
+    <a [routerLink]="'/class/' + class._id"
+       class="butt_class_enter"
+    >
+      {{ 'ClassPage_component_enter' | customTranslate: language.getLanguage() }}
+    </a>
+
+  </div>
+
+
+
+

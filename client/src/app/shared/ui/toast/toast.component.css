@@ -1,0 +1,52 @@
+.notification-container {
+  position: absolute;
+  z-index: 1500;
+  width: 25%;
+  right: 0;
+  top: 100px;
+  color: white;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.message-box {
+  line-height: inherit;
+  margin: 5px 10px;
+  padding: 5px 5px 5px 0;
+  height: 55px;
+  border-radius: 2%;
+  background-color: #79bbf9;
+}
+
+.vertical_line {
+  height: 100%;
+  border: transparent;
+  left: 50%;
+  margin-right: 10px;
+}
+
+.success_line {
+  border-left: 6px solid  #66D9BD;
+}
+
+.warning_line {
+  border-left: 6px solid  #EAC15A;
+}
+
+.error_line {
+  border-left: 6px solid  #D1557A;
+}
+
+.message_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

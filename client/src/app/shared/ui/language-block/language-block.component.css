@@ -1,0 +1,35 @@
+.lang {
+  width: fit-content;
+  height: 8%;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  border-radius: 50px;
+  z-index: 1000;
+}
+
+.lang .form {
+  width: clamp(8rem, 10vw, 12rem);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #6093c1;
+  border-radius: 50px;
+}
+
+.lang div {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(1rem, 10vw, 1.5rem);
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 10px;
+  cursor: pointer;
+}

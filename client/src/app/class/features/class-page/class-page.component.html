@@ -1,0 +1,56 @@
+<div class="row-classes">
+
+  <app-language-block></app-language-block>
+
+  <div class="student-name">{{ user.login }}</div>
+  <div class="student-role">
+    <!--  {currentUser[0].role === 'Teacher' ? (-->
+    <!--  <>{languageHandler(currentLang, 'ClassPage_role_teacher')}</>-->
+    <!--) : (-->
+    <!--<>{languageHandler(currentLang, 'ClassPage_role_student')}</>-->
+    <!--)}-->
+  </div>
+
+  <div class="main-menu">
+    <div class="text">
+      <div class="classes">
+        {{ 'ClassPage_classes' | customTranslate: this.language.getLanguage() }}
+      </div>
+      <div class="nb-of-class">
+        {{ user.nb_of_classes + "/3" }}
+      </div>
+    </div>
+    <div class="forclass">
+
+      <app-class-list [user]="user" [language]="language" [classes]="classes"></app-class-list>
+
+    </div>
+    <div class="links">
+      <div *ngIf="user.role === 'Student'" class="links">
+        <a routerLink="connect-class" class="butt-connect">
+          {{ 'ClassPage_connect' | customTranslate: this.language.getLanguage() }}
+        </a>
+        <a routerLink="del-class" class="butt-delete">
+          {{ 'ClassPage_disconnect' | customTranslate: this.language.getLanguage() }}
+        </a>
+      </div>
+      <div *ngIf="user.role === 'Teacher'">
+        <a routerLink="create-class" class="butt-connect">
+          {{ 'ClassPage_create' | customTranslate: this.language.getLanguage() }}
+        </a>
+        <a routerLink="del-class" class="butt-delete">
+          {{ 'ClassPage_delete' | customTranslate: this.language.getLanguage() }}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="div-lg-classes">
+    <button
+      class="button-lg-classes"
+      (click)="this.authService.logout()"
+    >
+      {{ 'ClassPage_logout' | customTranslate: this.language.getLanguage() }}
+    </button>
+  </div>
+</div>

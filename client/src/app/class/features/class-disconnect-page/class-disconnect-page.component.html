@@ -1,0 +1,42 @@
+
+<div class="row-disconnect-class">
+  <app-language-block></app-language-block>
+  <app-toast></app-toast>
+
+  <div class="student-role-disconnect">
+
+    <div *ngIf="user.role === 'Teacher'">
+      {{ 'ClassPage_role_teacher' | customTranslate: this.language.getLanguage() }}
+    </div>
+    <div *ngIf="user.role === 'Student'">
+      {{ 'ClassPage_role_student' | customTranslate: this.language.getLanguage() }}
+    </div>
+  </div>
+
+  <div class="student-name-disconnect">
+    {{ user.login }}
+  </div>
+
+  <form  class="main-form-disconnect" [formGroup]="disconnectForm" (ngSubmit)="onSubmit()">
+
+    <h1 class="class-disconnect">
+      {{ 'ClassPages_disconnect' | customTranslate: this.language.getLanguage() }}
+    </h1>
+
+    <input class="class-code-disconnect" [placeholder]="'ClassPages_name' | customTranslate:  language.getLanguage()" formControlName="name"/>
+    <button
+      class="submit-bt-disconnect"
+    >
+      {{ 'ClassPages_submit' | customTranslate: this.language.getLanguage() }}
+    </button>
+
+  </form>
+
+  <button
+    class="button-lg-classes-disconnect"
+    (click)="router.navigate(['/class'])"
+  >
+    {{ 'ClassPages_back' | customTranslate: this.language.getLanguage() }}
+  </button>
+</div>
+

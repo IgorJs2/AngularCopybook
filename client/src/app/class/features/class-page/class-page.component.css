@@ -1,0 +1,172 @@
+.row-classes {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.student-role {
+  width: 100%;
+  height: fit-content;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--big_text);
+  line-height: 55px;
+  color: #ffffff;
+}
+
+.student-name {
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  width: 10%;
+  height: fit-content;
+  margin-left: 1%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--big_text);
+  line-height: 55px;
+  color: #ffffff;
+}
+
+.main-menu {
+  width: 50%;
+  height: 65vh;
+  background: #6093c1;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+
+.forclass {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+.classes {
+  width: 60%;
+  height: 5vh;
+  justify-content: right;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  color: #ffffff;
+}
+
+.nb-of-class {
+  width: 40%;
+  margin-top: 5%;
+  height: 5vh;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 50px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.butt-connect {
+  width: 45%;
+  height: 6.5vh;
+  margin-right: 1%;
+  margin-left: 4%;
+  background: #66d9bd;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.butt-delete {
+  width: 45%;
+  height: 6.5vh;
+  margin-left: 1%;
+  justify-content: center;
+  background: #d1557a;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.div-lg-classes {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+
+.button-lg-classes {
+  width: 1vw;
+  min-width: 6em;
+  height: 6vh;
+  margin-right: 2%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  justify-content: center;
+  background: #d1557a;
+  border-radius: 50px;
+}
+
